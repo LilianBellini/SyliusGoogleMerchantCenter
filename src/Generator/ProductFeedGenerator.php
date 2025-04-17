@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\SyliusGoogleMerchantCenter\Generator;
+namespace LilianBellini\SyliusGoogleMerchantCenter\Generator;
 
 
 use Doctrine\Common\Collections\ArrayCollection;
@@ -8,8 +8,8 @@ use Sylius\Component\Core\Repository\ProductRepositoryInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\RouterInterface;
-use Systemin\SyliusGoogleMerchantCenter\Services;
-use Systemin\SyliusGoogleMerchantCenter\Services\StockService;
+use LilianBellini\SyliusGoogleMerchantCenter\Services;
+use LilianBellini\SyliusGoogleMerchantCenter\Services\StockService;
 
 class ProductFeedGenerator
 {

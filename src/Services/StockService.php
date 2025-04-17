@@ -1,6 +1,6 @@
 <?php
 
-namespace Systemin\SyliusGoogleMerchantCenter\Services;
+namespace LilianBellini\SyliusGoogleMerchantCenter\Services;
 
 use Doctrine\Common\Collections\ArrayCollection;
 

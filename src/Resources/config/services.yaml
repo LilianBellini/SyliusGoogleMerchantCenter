@@ -1,16 +1,16 @@
 services:
-    Systemin\SyliusGoogleMerchantCenter\Generator\ProductFeedGenerator:
+    LilianBellini\SyliusGoogleMerchantCenter\Generator\ProductFeedGenerator:
         arguments:
             $productRepository: '@sylius.repository.product'
             $router: '@router'
             $url: '%env(APP_SCHEME)%://%env(APP_HOST)%'  # Injection du paramètre app.url
     
-    Systemin\SyliusGoogleMerchantCenter\Controller\ProductFeedController:
+    LilianBellini\SyliusGoogleMerchantCenter\Controller\ProductFeedController:
         arguments:
-            $productFeedGenerator: '@Systemin\SyliusGoogleMerchantCenter\Generator\ProductFeedGenerator'
+            $productFeedGenerator: '@LilianBellini\SyliusGoogleMerchantCenter\Generator\ProductFeedGenerator'
     
-    Systemin\SyliusGoogleMerchantCenter\Command\GenerateProductFeedCommand:
+    LilianBellini\SyliusGoogleMerchantCenter\Command\GenerateProductFeedCommand:
         arguments:
-            $productFeedGenerator: '@Systemin\SyliusGoogleMerchantCenter\Generator\ProductFeedGenerator'
+            $productFeedGenerator: '@LilianBellini\SyliusGoogleMerchantCenter\Generator\ProductFeedGenerator'
         tags:
             - { name: 'console.command' }

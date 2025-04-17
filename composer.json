@@ -1,5 +1,5 @@
 {
-    "name": "systemin/sylius-google-merchant-center",
+    "name": "lilianbellini/sylius-google-merchant-center",
     "description": "A Sylius plugin to integrate with Google Merchant Center.",
     "type": "sylius-plugin",
     "keywords": [
@@ -12,7 +12,7 @@
     "authors": [
         {
             "name": "Lilian",
-            "email": "lilian@systemin.fr"
+            "email": "lilian@LilianBellini.fr"
         }
     ],
     "require": {
@@ -43,7 +43,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Systemin\\SyliusGoogleMerchantCenter\\": "src/"
+            "LilianBellini\\SyliusGoogleMerchantCenter\\": "src/"
         }
     }
 }
